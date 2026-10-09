@@ -1,24 +1,19 @@
-# Zhenhan Yin personal academic website
+# Zhenhan Yin academic homepage
 
-A static, single-page academic website designed for GitHub Pages. The homepage contains an introduction, research interests, selected publications, education, and public profile links.
+Published at https://zhenhanyin.github.io/ from the public GitHub repository https://github.com/zhenhanyin/zhenhanyin.github.io.
+
+The site is plain HTML and CSS. Navigation links scroll to sections of the page, and the publication and profile links open external sites. It has no backend, build step, or JavaScript dependency.
 
 ## Local preview
 
-From this directory, run `python -m http.server 8000` and open `http://localhost:8000`.
-
-## Publish on GitHub Pages
-
-1. Create a public repository named `zhenhanyin.github.io` in the `zhenhanyin` account.
-2. Put the contents of this directory at the repository root. The entry file is `index.html`.
-3. In repository **Settings → Pages**, select **Deploy from a branch**, choose `main` and `/(root)`, then save.
-4. Visit `https://zhenhanyin.github.io/` after Pages finishes publishing.
-
-Before publishing, review all copy and the portrait for public release. The source does not include the résumé, phone number, or private documents.
+Run `python -m http.server 8000` in this directory and open `http://localhost:8000`.
 
 ## Editing
 
-- Change biography, publications, and links in `index.html`.
-- Change visual styles in `styles.css`.
-- Replace `portrait.jpg` to update the portrait.
+- Update biography, publications, awards, patents, profile links, and metadata in `index.html`.
+- Update layout, typography, and responsive styles in `styles.css`.
+- The deployed page embeds the portrait in `index.html`. To change it, replace the image data URI in the portrait `src`; `portrait.jpg` is a local source copy.
+- Sidebar icons are stored in `assets/icons/`. The location, mail, and GitHub icons are from Bootstrap Icons under the included MIT license; the Hugging Face logo is from Hugging Face.
+- Publication thumbnails in `assets/publications/` are local copies of model figures from the [Magic-W0 project page](https://embodied.magiclab.top/works/wam/magic-w0/index.html), the [WSA₁ project page](https://zaleni.github.io/TBot-SA1/), and Figure 2 on the [MiVLA project page](https://mivla-research.github.io/). Each thumbnail opens its full-size figure.
 
-The site has no build step or JavaScript dependencies. Google Fonts are optional; system fonts are used if they are unavailable.
+The site does not include the résumé, phone number, or private documents.
